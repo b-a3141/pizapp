@@ -108,6 +108,9 @@ li{
     align-content: center;
 }
 
+button {
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 .elegir button{
     font-size: small;
@@ -117,7 +120,7 @@ li{
     background-color: rgb(141, 143, 51);
     padding: 2px 5px;
     border-radius: 10%;
-    
+   
 }
 
 .elegir button:hover{
