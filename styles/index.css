@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #c0392b; /* Rojo pizzero */
-  --secondary-color: #f4d03f; /* Amarillo queso */
-  --accent-color: #2ecc71; /* Verde albahaca */
-  --text-color: #2c3e50;
-  --background-color: #fef9e7;
+  primary-color: #c0392b; /* Rojo pizzero */
+  secondary-color: #f4d03f; /* Amarillo queso */
+  accent-color: #2ecc71; /* Verde albahaca */
+  text-color: #2c3e50;
+  background-color: #fef9e7;
 }
 
 body{
