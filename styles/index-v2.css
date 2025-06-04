@@ -1,86 +1,109 @@
 :root {
-  --primary-color: #c0392b; /* Rojo pizzero */
-  --secondary-color: #f4d03f; /* Amarillo queso */
-  --accent-color: #2ecc71; /* Verde albahaca */
+  --primary-color: #c0392b;       /* rojo pizza */
+  --secondary-color: #f4d03f;     /* amarillo queso */
+  --accent-color: #2ecc71;        /* verde albahaca */
   --text-color: #2c3e50;
   --background-color: #fef9e7;
 }
 
-body{
-    margin:0;
+body {
+  margin: 0;
   background-color: var(--background-color);
+  background-image: url("Img/bgLago.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--text-color);
- 
+  font-family: 'Poppins', sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
-#container > div{
-    width: 270px;
-    margin: 15px 15px;
-    color: white;
-    padding: 10px auto;
-    background-color: rgb(3, 83, 3);
-    border: 1px solid white;
-    border-radius: 3%;
+/* Contenedor general */
+#container > div {
+  width: 270px;
+  margin: 15px auto;
+  color: white;
+  padding: 20px;
+  background-color: rgba(3, 83, 3, 0.8);
+  border: 1px solid white;
+  border-radius: 12px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-#img{
-    width: 100%;
-    display: flex;
-    margin: 5px 5px;
-    padding: 5px 5px;
-    text-align: center;
+/* Encabezado */
+#img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
 }
 
-#img > img{
-    width: 35%;
+#img > img {
+  width: 50%;
+  max-width: 150px;
 }
 
-
-#img > h2{
-    width: 60%;
+.main-title {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-#links{
-    display: inline-block;
+/* Redes sociales */
+#links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-li{
-    list-style: none;
-}
-
- .opcionEntrega{
-    max-width: 252px;
-    padding-left: 5%;
-    margin-right: 5px;
-    display: grid;
-    grid-template-columns: 100px 35px 100px;
-    grid-template-rows: 5px 30px 5px;
-    
-}
-
-.opcionEntrega > div{
-    
-    display: grid;
-    align-content: center;
-}
-
+/* Botones */
 button {
   background-color: var(--primary-color);
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
-.elegir button{
-    font-size: small;
-    width: 45%;
-    text-decoration: none;
-    color: white;
-    background-color: rgb(141, 143, 51);
-    padding: 2px 5px;
-    border-radius: 10%;
-   
+button:hover {
+  background-color: #a93226;
 }
 
-.elegir button:hover{
-    background-color: rgb(51, 140, 143);;
+.elegir button {
+  font-size: small;
+  width: 100%;
+  margin-top: 5px;
 }
 
+/* Listas */
+li {
+  list-style: none;
+}
+
+/* Opción de entrega (layout con grid) */
+.opcionEntrega {
+  max-width: 252px;
+  padding-left: 5%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 100px 35px 100px;
+  grid-template-rows: 5px 30px 5px;
+  gap: 5px;
+}
+
+.opcionEntrega > div {
+  display: grid;
+  align-content: center;
+}
+
+.emptyBox {
+  visibility: hidden;
+  height: 5px;
+}
