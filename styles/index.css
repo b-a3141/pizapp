@@ -1,21 +1,16 @@
 :root {
-  primary-color: #c0392b; /* Rojo pizzero */
-  secondary-color: #f4d03f; /* Amarillo queso */
-  accent-color: #2ecc71; /* Verde albahaca */
-  text-color: #2c3e50;
-  background-color: #fef9e7;
+  --primary-color: #c0392b; /* Rojo pizzero */
+  --secondary-color: #f4d03f; /* Amarillo queso */
+  --accent-color: #2ecc71; /* Verde albahaca */
+  --text-color: #2c3e50;
+  --background-color: #fef9e7;
 }
 
 body{
     margin:0;
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: 'Poppins', sans-serif;  
-background-image: url("Img/bgLago.png");
-margin:0;
-
-width: 100vw;
-height: 100vh;
+ 
 }
 
 
@@ -57,39 +52,6 @@ li{
     list-style: none;
 }
 
-/* 
-
-.elegir{
-    display: flex;
-    
-}
-
-
-.elegir h5{
-    width: 45%;
-    margin: 3% 2%;
-    padding: 0 5px;
-    white-space: nowrap;
-}
-
-.elegir a{
-    font-size: small;
-    width: 45%;
-    text-decoration: none;
-    color: white;
-    background-color: rgb(141, 143, 51);
-    margin: 3% 50%;
-    
-    padding: 5px 5px;
-    border-radius: 10%;
-    
-}
-
-.elegir a:hover{
-    background-color: rgb(51, 140, 143);;
-}
-
- */
 
  .opcionEntrega{
     max-width: 252px;
@@ -109,8 +71,10 @@ li{
 }
 
 button {
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-color);
+  color: white;
 }
+
 
 .elegir button{
     font-size: small;
