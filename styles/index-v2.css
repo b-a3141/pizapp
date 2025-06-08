@@ -107,3 +107,47 @@ li {
   visibility: hidden;
   height: 5px;
 }
+
+/* Mobile first: todos los botones y entradas de menú grandes */
+button, .menu-item button {
+  font-size: 1rem;
+  padding: 14px 20px;
+  min-width: 120px;
+  min-height: 48px;
+  margin: 8px 0;
+}
+
+/* Aumentar tamaño y espacio de items de menú */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  margin: 12px 0;
+}
+
+/* Mejor legibilidad en móviles */
+@media (max-width: 600px) {
+  body {
+    font-size: 1.05rem;
+    padding: 6px;
+  }
+  h1, h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  #menu-list, #cart {
+    padding: 0 2vw;
+  }
+  .menu-item, .cart-item {
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 1.15rem;
+  }
+  button, .menu-item button {
+    width: 100%;
+    min-width: unset;
+    font-size: 1.2rem;
+    margin: 8px 0;
+  }
+}
