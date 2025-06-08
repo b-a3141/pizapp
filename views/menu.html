@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="../styles/.menu.css">
+  <meta charset="UTF-8">
+  <title>Menú PizApp</title>
+  <link rel="stylesheet" href="../styles/index-v2.css">
+  <script src="../Controllers/menuController.js" defer></script>
+  <script src="../Controllers/cartController.js" defer></script>
 </head>
 <body>
-    <div id="container">
-        <h2>Menu</h2>
-    </div>
+  <h1>Menú de Pizzas</h1>
+  <p id="modoEntrega"></p>
 
-
+  <div id="menu-list">
+    <!-- Los productos se generan dinámicamente -->
+  </div>
+  <hr>
+  <h2>Carrito</h2>
+  <div id="cart">
+    <!-- Aquí aparecen los ítems seleccionados -->
+  </div>
+  <button id="finalizar">Finalizar pedido</button>
 </body>
 </html>
