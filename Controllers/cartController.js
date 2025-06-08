@@ -59,8 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCart();
 
   document.getElementById('finalizar').addEventListener('click', () => {
-    alert('¡Gracias por tu pedido!');
-    localStorage.removeItem('cart');
-    renderCart();
+    window.location.href = './procesar.html';
   });
 });
