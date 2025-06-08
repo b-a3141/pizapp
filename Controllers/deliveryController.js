@@ -1,10 +1,18 @@
-const envio = document.getElementById('envio');
-envio.addEventListener('click', showMesagge);
+document.addEventListener('DOMContentLoaded', () => {
+  const btnDelivery = document.getElementById('envio');
+  const btnTakeAway = document.getElementById('retira');
 
+  if (btnDelivery) {
+    btnDelivery.addEventListener('click', () => {
+      localStorage.setItem('modoEntrega', 'delivery');
+      window.location.href = './views/menu.html';
+    });
+  }
 
-const lorem = document.getElementById('lorem');
-
-
-function showMesagge(){
-    lorem.innerHTML = "Script on load";
-}
+  if (btnTakeAway) {
+    btnTakeAway.addEventListener('click', () => {
+      localStorage.setItem('modoEntrega', 'takeaway');
+      window.location.href = './views/menu.html';
+    });
+  }
+});
