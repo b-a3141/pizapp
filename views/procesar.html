@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Procesar Pedido</title>
+  <link rel="stylesheet" href="../styles/index-v2.css">
+  <script src="../Controllers/procesarController.js" defer></script>
+</head>
+<body>
+  <h1>Finalizá tu pedido</h1>
+  <div id="resumen-pedido"></div>
+  <form id="form-procesar">
+    <label>
+      Nombre y apellido:
+      <input type="text" name="nombre" required>
+    </label>
+    <br>
+    <label>
+      Teléfono / WhatsApp:
+      <input type="tel" name="telefono" required>
+    </label>
+    <br>
+    <div id="direccion-div"></div>
+    <button type="submit">Confirmar pedido</button>
+  </form>
+</body>
+</html>
